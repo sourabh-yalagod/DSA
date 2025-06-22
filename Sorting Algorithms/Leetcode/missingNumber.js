@@ -1,21 +1,23 @@
 const missingNumber=(array)=>{
     let index=0;
-    let ans=-1
     while(index<array.length){
-        let current=array[index]
-        if(current==index){
-            index++;
-        }else{
+        let currentValueIndex = array[index]; 
+        if(currentValueIndex<array.length && currentValueIndex!=index){
             let temp = array[index];
-            array[index]=array[current]; 
-            array[current]=temp;
-            index++
+            array[index] = array[currentValueIndex];
+            array[currentValueIndex]=temp;
+        }else{
+            index++;
         }
     }
-    for(let i=0;i<array.length;i++){
-        if(array[i]==undefined) return i
+    for(index=0;index<array.length;index++){
+        if(array[index]!=index){
+            return index;
+        }
     }
+    return -1;
 }
+const nums = [9,6,4,2,3,5,7,0,1]
 
-const array=[0,1,3]
-console.log(missingNumber(array));
+;
+console.log("Number : ",missingNumber(nums));
