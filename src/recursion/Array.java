@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Array {
-    public static void main(String[] args) {
+    public static void main(StringClass[] args) {
         List<Integer> array = new ArrayList<>();
         array.addAll(Arrays.asList(12, 0, 23, 23, 23, 34, 45, 56));
         List<Integer> sorted = getIndexTargetByElements(array, 23, 0);
