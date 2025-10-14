@@ -3,7 +3,7 @@ package neetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FinDublicateElements {
+public class FindDublicateElements {
     public static boolean containsDuplicate(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
