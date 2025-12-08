@@ -5,24 +5,29 @@ import java.util.Map;
 
 public class LongestRepeatingCharacterReplacement {
     public static void main(String[] args) {
-        int k = 1;
-        String str = "ABBB";
+        int k = 2;
+        String str = "ababbbaa";
         int count = findLongestSubString(str, k);
         System.out.println(count);
     }
 
     private static int findLongestSubString(String str, int k) {
+        int left = 0;
+        int count = 0;
+        int maxFreq = 0;
         Map<Character, Integer> map = new HashMap<>();
-        int left = 0, count = 0;
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             map.put(ch, map.getOrDefault(ch, 0) + 1);
-            while ((i - left) - map.get(ch) < k) {
-                map.put(str.charAt(left), map.get(str.charAt(left)) - 1);
+            maxFreq = Math.max(maxFreq, map.get(ch));
+            while ((i - left + 1) - maxFreq > k) {
+                char leftChar = str.charAt(left);
+                map.put(leftChar, map.get(leftChar) - 1);
+                if (map.get(leftChar) <= 0) map.remove(leftChar);
                 left++;
             }
+            count = Math.max(count, i - left + 1);
         }
-        System.out.println(map);
         return count;
     }
 
