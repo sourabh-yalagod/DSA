@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {1, 2, 2, 4, 5};
+        int[] array = {1, 2, 2, 2, 4, 4, 5};
         String[] strings = {"act", "act", "bus", "train", "sub"};
-        System.out.println(groupAnagrams(strings));
+        System.out.println(topKElements(array, 1));
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -55,5 +55,26 @@ public class Solutions {
                     .add(strings[i]);
         }
         return new ArrayList<>(tempMap.values());
+    }
+
+    private static List<Integer> topKElements(int[] nums, int k) {
+        List<Integer> list = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        List<List<Integer>> freq = new ArrayList<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+            freq.add(new ArrayList<>());
+        }
+        map.forEach((key, value) -> {
+            freq.get(value).add(key);
+        });
+        for (int i = freq.size() - 1; i >= 0; i--) {
+            if (freq.get(i).isEmpty()) continue;
+            if (k <= 0) break;
+            System.out.println("freq.get(i) : " + freq.get(i));
+            list.addAll(freq.get(i));
+            k -= freq.get(i).size();
+        }
+        return list;
     }
 }
