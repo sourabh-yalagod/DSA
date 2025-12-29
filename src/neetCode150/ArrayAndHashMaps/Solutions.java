@@ -4,9 +4,10 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 100, 4, 200};
+        int[] array1 = {1, 2, 3, 4, 0, 0};
+        int[] array2 = {1, 2};
         String[] strings = {"act", "act", "bus", "train", "sub"};
-        System.out.println(longestConsecutive(array));
+        mergeSortedArray(array1, array2);
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -128,7 +129,7 @@ public class Solutions {
         return result;
     }
 
-    public static int longestConsecutive(int[] nums) {
+    private static int longestConsecutive(int[] nums) {
         Set<Integer> set = new HashSet<>();
         int count = 0;
         for (int num : nums) {
@@ -146,5 +147,26 @@ public class Solutions {
             }
         }
         return count;
+    }
+
+    private static int[] mergeSortedArray(int[] array1, int[] array2) {
+        int first = array1.length - 1;
+        int second = array2.length - 1;
+        int last = first;
+        for (int i = array1.length - 1; i >= 0; i--) {
+            if (array1[i] != 0) break;
+            first--;
+        }
+        while (first >= 0 && second >= 0) {
+            if (array1[first] < array2[second]) {
+                array1[last--] = array2[second--];
+            } else {
+                array1[last--] = array1[first--];
+            }
+        }
+        while (second >= 0) {
+            array1[last--] = array2[second--];
+        }
+        return array1;
     }
 }
