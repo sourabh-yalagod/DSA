@@ -8,7 +8,7 @@ import java.util.Set;
 public class Solutions {
     public static void main(String[] args) {
         int[] array = {1, 2, 2, 4, 5};
-        System.out.println(validAnagram("caat", "aact"));
+        System.out.println(twoSum(array,6));
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -32,5 +32,18 @@ public class Solutions {
             else map.put(ch, count - 1);
         }
         return map.isEmpty();
+    }
+
+    private static int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int remaining = target - nums[i];
+            if (map.containsKey(nums[i])) {
+                System.out.println(map.get(nums[i]) + " " + i);
+                return new int[]{map.get(nums[i]), i};
+            }
+            map.put(remaining, i);
+        }
+        return new int[]{-1, -1};
     }
 }
