@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3};
+        int[] array = {1, 2, 3, 100, 4, 200};
         String[] strings = {"act", "act", "bus", "train", "sub"};
-        productOfArrayExceptSelf(array);
+        System.out.println(longestConsecutive(array));
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -126,5 +126,25 @@ public class Solutions {
             result[i] = prefix[i] * postfix[i];
         }
         return result;
+    }
+
+    public static int longestConsecutive(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        int count = 0;
+        for (int num : nums) {
+            set.add(num);
+        }
+        for (int num : set) {
+            if (!set.contains(num - 1)) {
+                int innerCount = 1;
+                int currentNum = num;
+                while (set.contains(currentNum + 1)) {
+                    currentNum++;
+                    innerCount++;
+                }
+                count = Math.max(count, innerCount);
+            }
+        }
+        return count;
     }
 }
