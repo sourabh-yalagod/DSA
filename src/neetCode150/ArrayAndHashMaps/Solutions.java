@@ -6,7 +6,7 @@ public class Solutions {
     public static void main(String[] args) {
         int[] array = {1, 2, 2, 2, 4, 4, 5};
         String[] strings = {"act", "act", "bus", "train", "sub"};
-        System.out.println(topKElements(array, 1));
+        System.out.println(decode("3cat2is7walking"));
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -76,5 +76,37 @@ public class Solutions {
             k -= freq.get(i).size();
         }
         return list;
+    }
+
+    private static String encode(String string) {
+        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder innerResult = new StringBuilder();
+        for (char ch : string.toCharArray()) {
+            if (ch == ' ') {
+                int len = innerResult.length();
+                stringBuilder.append(Integer.toString(len));
+                stringBuilder.append(innerResult.toString());
+                innerResult.delete(0, len);
+            } else innerResult.append(ch);
+        }
+        stringBuilder.append(innerResult.length());
+        stringBuilder.append(innerResult.toString());
+        return stringBuilder.toString();
+    }
+
+    private static String decode(String string) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < string.length(); i++) {
+            if (Character.isDigit(string.charAt(i))) {
+                int len = string.charAt(i) - '0';
+                for (int j = i + 1; j <= len + i; j++) {
+                    result.append(string.charAt(j));
+                }
+                i += len;
+                if (i < string.length() - 1)
+                    result.append(" ");
+            }
+        }
+        return result.toString();
     }
 }
