@@ -1,14 +1,12 @@
 package neetCode150.ArrayAndHashMaps;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
         int[] array = {1, 2, 2, 4, 5};
-        System.out.println(twoSum(array,6));
+        String[] strings = {"act", "act", "bus", "train", "sub"};
+        System.out.println(groupAnagrams(strings));
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -45,5 +43,17 @@ public class Solutions {
             map.put(remaining, i);
         }
         return new int[]{-1, -1};
+    }
+
+    private static List<List<String>> groupAnagrams(String[] strings) {
+        Map<String, List<String>> tempMap = new HashMap<>();
+        for (int i = 0; i < strings.length; i++) {
+            char[] chars = strings[i].toCharArray();
+            Arrays.sort(chars);
+            String key = new String(chars);
+            tempMap.computeIfAbsent(key, (k) -> new ArrayList<String>())
+                    .add(strings[i]);
+        }
+        return new ArrayList<>(tempMap.values());
     }
 }
