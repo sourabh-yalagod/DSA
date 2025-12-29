@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {1, 2, 2, 2, 4, 4, 5};
+        int[] array = {1, 2, 3};
         String[] strings = {"act", "act", "bus", "train", "sub"};
-        System.out.println(decode("3cat2is7walking"));
+        productOfArrayExceptSelf(array);
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -51,8 +51,7 @@ public class Solutions {
             char[] chars = strings[i].toCharArray();
             Arrays.sort(chars);
             String key = new String(chars);
-            tempMap.computeIfAbsent(key, (k) -> new ArrayList<String>())
-                    .add(strings[i]);
+            tempMap.computeIfAbsent(key, (k) -> new ArrayList<String>()).add(strings[i]);
         }
         return new ArrayList<>(tempMap.values());
     }
@@ -103,10 +102,29 @@ public class Solutions {
                     result.append(string.charAt(j));
                 }
                 i += len;
-                if (i < string.length() - 1)
-                    result.append(" ");
+                if (i < string.length() - 1) result.append(" ");
             }
         }
         return result.toString();
+    }
+
+    private static int[] productOfArrayExceptSelf(int[] nums) {
+        int[] result = new int[nums.length];
+
+        int[] prefix = new int[nums.length];
+        int[] postfix = new int[nums.length];
+        prefix[0] = 1;
+        for (int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i - 1] * nums[i - 1];
+        }
+        int n = prefix.length;
+        postfix[n - 1] = 1;
+        for (int i = n - 2; i >= 0; i--) {
+            postfix[i] = postfix[i + 1] * nums[i + 1];
+        }
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = prefix[i] * postfix[i];
+        }
+        return result;
     }
 }
