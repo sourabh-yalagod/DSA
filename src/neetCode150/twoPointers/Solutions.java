@@ -1,8 +1,13 @@
 package neetCode150.twoPointers;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Solutions {
     public static void main(String[] args) {
-        System.out.println(validPalindrome("ca"));
+        int[] array = {4, 2, 0, 3, 2, 5};
+        System.out.println(trappingRainWater(array));
     }
 
     private static boolean validPalindrome(String string) {
@@ -14,5 +19,16 @@ public class Solutions {
             right--;
         }
         return true;
+    }
+
+    private static int[] twoSum2(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            if (nums[left] + nums[right] == target) return new int[]{left, right};
+            else if (nums[left] + nums[right] > target) right--;
+            else left++;
+        }
+        return new int[]{-1, -1};
     }
 }
