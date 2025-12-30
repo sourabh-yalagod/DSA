@@ -64,4 +64,21 @@ public class Solutions {
         });
         return maxProfit[0] + maxProfit[1];
     }
+
+    private static int longestSubstringWithoutRepeatingCharacter(String string) {
+        Set<Character> set = new HashSet<>();
+        int left = 0;
+        int right = 0;
+        int len = 0;
+        while (right < string.length()) {
+            char ch = string.charAt(right);
+            while (set.contains(string.charAt(right))) {
+                set.remove(string.charAt(left++));
+            }
+            right++;
+            set.add(ch);
+            len = Math.max(len, right - left);
+        }
+        return len;
+    }
 }
