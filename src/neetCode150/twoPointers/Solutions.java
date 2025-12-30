@@ -63,4 +63,24 @@ public class Solutions {
         }
         return maxWater;
     }
+
+    private static int trappingRainWater(int[] height) {
+        int mostWater = 0;
+        int index = 0;
+        int[] leftHigh = new int[height.length];
+        int[] rightHigh = new int[height.length];
+        for (int i = 0; i < leftHigh.length; i++) {
+            if (leftHigh[index] < height[i]) index = i;
+            leftHigh[i] = Math.max(leftHigh[index], height[i]);
+        }
+        index = 0;
+        for (int i = rightHigh.length - 1; i >= 0; i--) {
+            if (rightHigh[index] < height[i]) index = i;
+            rightHigh[i] = Math.max(rightHigh[index], height[i]);
+        }
+        for (int i = 0; i < height.length; i++) {
+            mostWater += Math.min(leftHigh[i], rightHigh[i]) - height[i];
+        }
+        return mostWater;
+    }
 }
