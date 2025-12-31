@@ -5,7 +5,8 @@ import java.util.Stack;
 
 public class Solutions {
     public static void main(String[] args) {
-        System.out.println(validParentheses("((]))"));
+        String[] strings = {"1","2","+","3","*","4","-"};
+        System.out.println(polishFlagCompute(strings));
     }
 
     private static boolean validParentheses(String para) {
@@ -53,5 +54,34 @@ public class Solutions {
         }
     }
 
+    private static int polishFlagCompute(String[] strings) {
+        Stack<Integer> stack = new Stack<>();
+        int result = 0;
+        for (String string : strings) {
+            if (isSymbol(string)) {
+                int first = stack.pop();
+                int second = stack.pop();
+                switch (string) {
+                    case "+":
+                        result = first + second;
+                        break;
+                    case "-":
+                        result = second - first;
+                        break;
+                    case "*":
+                        result = second * first;
+                        break;
+                    case "/":
+                        result = second / first;
+                        break;
+                }
+                stack.push(result);
+            } else stack.push(Integer.parseInt(string));
+        }
+        return result;
+    }
 
+    private static boolean isSymbol(String symbol) {
+        return symbol.equals("+") || symbol.equals("/") || symbol.equals("*") || symbol.equals("-");
+    }
 }
