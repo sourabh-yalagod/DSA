@@ -1,4 +1,4 @@
-package neetCode150.pattern;
+package pattern;
 
 public class Solutions {
     public static void main(String[] args) {
