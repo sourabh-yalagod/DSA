@@ -5,8 +5,10 @@ import java.util.Stack;
 
 public class Solutions {
     public static void main(String[] args) {
-        String[] strings = {"1","2","+","3","*","4","-"};
-        System.out.println(polishFlagCompute(strings));
+        int[] array = {30, 38, 30, 36, 35, 40, 28};
+        for (int ele : dailyTemperatures(array)) {
+            System.out.print(" " + ele);
+        }
     }
 
     private static boolean validParentheses(String para) {
@@ -83,5 +85,16 @@ public class Solutions {
 
     private static boolean isSymbol(String symbol) {
         return symbol.equals("+") || symbol.equals("/") || symbol.equals("*") || symbol.equals("-");
+    }
+
+    public static int[] dailyTemperatures(int[] temperatures) {
+        Stack<Integer> stack = new Stack<>();
+        int[] result = new int[temperatures.length];
+        for (int i = temperatures.length - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && temperatures[stack.peek()] <= temperatures[i]) stack.pop();
+            result[i] = stack.isEmpty() ? 0 : stack.peek() - i;
+            stack.push(i);
+        }
+        return result;
     }
 }
