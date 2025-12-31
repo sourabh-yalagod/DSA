@@ -98,4 +98,40 @@ public class Solutions {
         }
         return count;
     }
+
+    private static boolean checkInclusion(String s1, String s2) {
+        if(s1.length()>s2.length()) return false;
+
+        int[] hashTable1 = new int[26];
+        int[] hashTable2 = new int[26];
+
+        for(int i=0;i<s1.length();i++){
+            hashTable1[s1.charAt(i)-'a']++;
+        }
+
+        int window = s1.length();
+
+        for(int i=0;i<window;i++){
+            hashTable2[s2.charAt(i)-'a']++;
+        }
+
+        if(matched(hashTable1,hashTable2)) return true;
+
+        int left = 0;
+        int right = window;
+
+        while(right<s2.length()){
+            hashTable2[s2.charAt(left++)-'a']--;
+            hashTable2[s2.charAt(right++)-'a']++;
+            if(matched(hashTable1,hashTable2)) return true;
+        }
+
+        return false;
+    }
+    private static boolean matched(int[] hashTable1,int[] hashTable2){
+        for(int i=0;i<26;i++){
+            if(hashTable1[i]!=hashTable2[i]) return false;
+        }
+        return true;
+    }
 }
