@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-
+        System.out.println(minWindowSubString("rabh", "soaurawwwbh"));
     }
 
     private static int bestTimeToBuyStock1(int[] prices) {
@@ -100,38 +100,69 @@ public class Solutions {
     }
 
     private static boolean checkInclusion(String s1, String s2) {
-        if(s1.length()>s2.length()) return false;
+        if (s1.length() > s2.length()) return false;
 
         int[] hashTable1 = new int[26];
         int[] hashTable2 = new int[26];
 
-        for(int i=0;i<s1.length();i++){
-            hashTable1[s1.charAt(i)-'a']++;
+        for (int i = 0; i < s1.length(); i++) {
+            hashTable1[s1.charAt(i) - 'a']++;
         }
 
         int window = s1.length();
 
-        for(int i=0;i<window;i++){
-            hashTable2[s2.charAt(i)-'a']++;
+        for (int i = 0; i < window; i++) {
+            hashTable2[s2.charAt(i) - 'a']++;
         }
 
-        if(matched(hashTable1,hashTable2)) return true;
+        if (matched(hashTable1, hashTable2)) return true;
 
         int left = 0;
         int right = window;
 
-        while(right<s2.length()){
-            hashTable2[s2.charAt(left++)-'a']--;
-            hashTable2[s2.charAt(right++)-'a']++;
-            if(matched(hashTable1,hashTable2)) return true;
+        while (right < s2.length()) {
+            hashTable2[s2.charAt(left++) - 'a']--;
+            hashTable2[s2.charAt(right++) - 'a']++;
+            if (matched(hashTable1, hashTable2)) return true;
         }
 
         return false;
     }
-    private static boolean matched(int[] hashTable1,int[] hashTable2){
-        for(int i=0;i<26;i++){
-            if(hashTable1[i]!=hashTable2[i]) return false;
+
+    private static boolean matched(int[] hashTable1, int[] hashTable2) {
+        for (int i = 0; i < 26; i++) {
+            if (hashTable1[i] != hashTable2[i]) return false;
         }
         return true;
+    }
+
+    private static boolean matched2(Map<Character, Integer> map1, Map<Character, Integer> map2) {
+        for (char ch : map1.keySet()) {
+            if (map1.get(ch) > map2.getOrDefault(ch, 0)) return false;
+        }
+        return true;
+    }
+
+    private static String minWindowSubString(String s1, String s2) {
+        Map<Character, Integer> map1 = new HashMap<>();
+        Map<Character, Integer> map2 = new HashMap<>();
+        for (char ch : s1.toCharArray()) {
+            map1.put(ch, map1.getOrDefault(ch, 0) + 1);
+        }
+        int right = 0;
+        for (char ch : s2.toCharArray()) {
+            map2.put(ch, map2.getOrDefault(ch, 0) + 1);
+            right++;
+            if (matched2(map1, map2)) break;
+        }
+        if (!matched2(map1, map2)) return "";
+        int left = 0;
+        while (left < right) {
+            char ch = s2.charAt(left);
+            map2.put(ch, map2.get(ch) - 1);
+            if (matched2(map1, map2)) left++;
+            else break;
+        }
+        return s2.substring(left, right);
     }
 }
