@@ -1,5 +1,6 @@
 package stack;
 
+import java.util.Objects;
 import java.util.Stack;
 
 public class Solutions {
@@ -21,4 +22,36 @@ public class Solutions {
         }
         return stack.isEmpty();
     }
+
+    class MinStack {
+        private static Stack<Integer> minStack = new Stack<>();
+        private static Stack<Integer> stack = new Stack<>();
+
+        public MinStack() {
+
+        }
+
+        public static void push(int val) {
+            if (minStack.isEmpty() && stack.isEmpty()) {
+                minStack.push(val);
+                stack.push(val);
+            }
+            if (minStack.peek() > val) minStack.push(val);
+            stack.push(val);
+        }
+
+        public static void pop() {
+            if (Objects.equals(stack.pop(), minStack.peek())) minStack.pop();
+        }
+
+        public static int top() {
+            return stack.peek();
+        }
+
+        public static int getMin() {
+            return minStack.peek();
+        }
+    }
+
+
 }
