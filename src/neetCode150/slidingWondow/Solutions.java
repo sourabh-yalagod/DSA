@@ -1,14 +1,12 @@
 package neetCode150.slidingWondow;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {3, 3, 5, 0, 0, 3, 1, 4};
+
     }
+
     private static int bestTimeToBuyStock1(int[] prices) {
         int maxProfit = 0;
         int low = 0;
@@ -25,6 +23,7 @@ public class Solutions {
         }
         return maxProfit;
     }
+
     private static int bestTimeToBuyStock2(int[] prices) {
         int maxProfit = 0;
         for (int i = 1; i < prices.length; i++) {
@@ -80,5 +79,23 @@ public class Solutions {
             len = Math.max(len, right - left);
         }
         return len;
+    }
+
+    private static int longestRepeatingCharacterReplacement(String string, int k) {
+        int count = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        int low = 0;
+        int high = 0;
+        for (int i = 0; i < string.length(); i++) {
+            char ch = string.charAt(high);
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+            while ((high - low + 1) - map.get(ch) > k) {
+                char leftChar = string.charAt(low++);
+                map.put(leftChar, map.getOrDefault(leftChar, 0) - 1);
+            }
+            count = Math.max(count, high - low + 1);
+            high++;
+        }
+        return count;
     }
 }
