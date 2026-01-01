@@ -1,14 +1,13 @@
 package stack;
 
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.Stack;
 
 public class Solutions {
     public static void main(String[] args) {
         int[] array = {30, 38, 30, 36, 35, 40, 28};
-        for (int ele : dailyTemperatures(array)) {
-            System.out.print(" " + ele);
-        }
+        System.out.println(carFleets(12, new int[]{10, 8, 0, 5, 3}, new int[]{2, 4, 1, 1, 3}));
     }
 
     private static boolean validParentheses(String para) {
@@ -96,5 +95,28 @@ public class Solutions {
             stack.push(i);
         }
         return result;
+    }
+
+    private static int carFleets(int target, int[] position, int[] speed) {
+        int[][] matrix = new int[position.length][2];
+        for (int i = 0; i < position.length; i++) {
+            matrix[i][0] = position[i];
+            matrix[i][1] = speed[i];
+        }
+        Arrays.sort(matrix, (a, b) -> b[0] - a[0]);
+        int[] remaining = new int[position.length];
+        for (int i = 0; i < position.length; i++) {
+            remaining[i] = (target - matrix[i][0]) / matrix[i][1];
+        }
+        int fleets = 0;
+        double maxTime = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            double time = (double)(target - matrix[i][0]) / matrix[i][1];
+            if (time > maxTime) {
+                fleets++;
+                maxTime = time;
+            }
+        }
+        return fleets;
     }
 }
