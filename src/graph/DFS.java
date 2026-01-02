@@ -3,13 +3,13 @@ package graph;
 import java.util.*;
 
 public class DFS {
-    private static Map<Integer, List<Integer>> graph = new HashMap<>();
+    public static Map<Integer, List<Integer>> graph = new HashMap<>();
 
-    private static void addVertex(int value) {
+    public static void addVertex(int value) {
         graph.put(value, new ArrayList<>());
     }
 
-    private static void addEdge(int source, int destination) {
+    public static void addEdge(int source, int destination) {
         graph.get(source).add(destination);
         graph.get(destination).add(source);
     }
