@@ -1,4 +1,4 @@
-package stack;
+package neetCode150.stack;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -141,7 +141,6 @@ public class Solutions {
             int a = height[i] * (nextSmallerElements[i] - previousSmallerElements[i] - 1);
             area = Math.max(a, area);
         }
-
         return area;
     }
 }
