@@ -24,7 +24,8 @@ public class MinimumSpanningTree {
         addEdges(1, 3, 2);
         addEdges(2, 4, 4);
         addEdges(3, 4, 1);
-        minSpanTreeUsingPrims(1);
+//        minSpanTreeUsingPrims(1);
+        kurshal();
     }
 
     private static void printGraph() {
@@ -39,22 +40,34 @@ public class MinimumSpanningTree {
 
     private static void minSpanTreeUsingPrims(int startVertex) {
         PriorityQueue<GraphNode> pq = new PriorityQueue<>(Comparator.comparingInt(GraphNode::getWeight));
-        Set<Integer> visited = new HashSet<>();
+        Stack<Integer> set = new Stack<>();
         pq.addAll(graph.get(startVertex));
-        visited.add(startVertex);
-        int cost = 0;
+        set.add(startVertex);
+        int minCost = 0;
         while (!pq.isEmpty()) {
             GraphNode node = pq.poll();
-            int next = visited.contains(node.getSource()) ? node.getDestination() : node.getSource();
-            if (visited.contains(next)) continue;
-            visited.add(next);
-            pq.addAll(graph.get(next));
-            System.out.println(
-                    node.getSource() + " - " +
-                            node.getDestination() + " (w=" + node.getWeight() + ")"
-            );
-            cost += node.getWeight();
+            int nextNode = set.contains(node.getSource()) ? node.getDestination() : node.getSource();
+            if (set.contains(nextNode)) continue;
+            pq.addAll(graph.get(nextNode));
+            set.add(nextNode);
+            minCost += node.getWeight();
+            System.out.println(nextNode + "->" + "[" + node.getSource() + " - " + node.getDestination() + "]");
         }
-        System.out.println("Minimum Cost : " + cost);
+        System.out.println("MinCost : " + minCost);
+    }
+
+    private static void kurshal() {
+        PriorityQueue<GraphNode> pq = new PriorityQueue<>(Comparator.comparingInt(GraphNode::getWeight));
+        Set<Integer> set = new HashSet<>();
+        for (int key : graph.keySet()) {
+            pq.addAll(graph.get(key));
+        }
+        while (!pq.isEmpty()) {
+            GraphNode node = pq.poll();
+            if (!set.contains(node.getSource())) set.add(node.getSource());
+            if (!set.contains(node.getDestination())) set.add(node.getDestination());
+            if (set.contains(node.getDestination()) && set.contains(node.getSource()))
+                System.out.println(node.getSource() + "->" + "[" + node.getSource() + " - " + node.getDestination() + "]");
+        }
     }
 }

@@ -6,8 +6,8 @@ import java.util.Stack;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {30, 38, 30, 36, 35, 40, 28};
-        System.out.println(carFleets(12, new int[]{10, 8, 0, 5, 3}, new int[]{2, 4, 1, 1, 3}));
+        int[] array = {7, 1, 7, 2, 2, 4};
+        System.out.println(largeHistogram(array));
     }
 
     private static boolean validParentheses(String para) {
@@ -111,12 +111,37 @@ public class Solutions {
         int fleets = 0;
         double maxTime = 0;
         for (int i = 0; i < matrix.length; i++) {
-            double time = (double)(target - matrix[i][0]) / matrix[i][1];
+            double time = (double) (target - matrix[i][0]) / matrix[i][1];
             if (time > maxTime) {
                 fleets++;
                 maxTime = time;
             }
         }
         return fleets;
+    }
+
+    private static int largeHistogram(int[] height) {
+        int area = 0;
+        int length = height.length;
+        int[] nextSmallerElements = new int[length];
+        int[] previousSmallerElements = new int[length];
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < length; i++) {
+            while (!stack.isEmpty() && height[stack.peek()] >= height[i]) stack.pop();
+            previousSmallerElements[i] = stack.isEmpty() ? -1 : stack.peek();
+            stack.push(i);
+        }
+        stack.clear();
+        for (int i = length - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && height[stack.peek()] >= height[i]) stack.pop();
+            nextSmallerElements[i] = stack.isEmpty() ? length : stack.peek();
+            stack.push(i);
+        }
+        for (int i = 0; i < length; i++) {
+            int a = height[i] * (nextSmallerElements[i] - previousSmallerElements[i] - 1);
+            area = Math.max(a, area);
+        }
+
+        return area;
     }
 }
