@@ -7,11 +7,7 @@ import java.util.Map;
 
 public class Solutions {
     public static void main(String[] args) {
-        TimeMap timeMap = new TimeMap();
-        timeMap.set("key", "user1", 1);
-        timeMap.set("key", "user2", 2);
-        timeMap.set("key", "user3", 3);
-        System.out.println(timeMap.get("key", 4));
+
     }
 
     private static int binarySearch(int[] array, int target) {
@@ -117,4 +113,6 @@ public class Solutions {
             }
         }
     }
+    
+
 }
