@@ -1,12 +1,17 @@
 package binarySearch;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {6, 8, 9, 5, 4, 3, 2};
-        int[][] matrix = {{1, 2, 4, 8}, {10, 11, 12, 13}, {14, 20, 30, 40}};
-        int[] piles = {1, 4, 3, 2};
-        int h = 9;
-        System.out.println(findMinInRotatedArray(array));
+        TimeMap timeMap = new TimeMap();
+        timeMap.set("key", "user1", 1);
+        timeMap.set("key", "user2", 2);
+        timeMap.set("key", "user3", 3);
+        System.out.println(timeMap.get("key", 4));
     }
 
     private static int binarySearch(int[] array, int target) {
@@ -64,5 +69,52 @@ public class Solutions {
             else high = mid;
         }
         return low;
+    }
+
+    private static int peekInMountainArray(int[] array) {
+        int low = 0;
+        int high = array.length - 1;
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (array[mid] > array[mid + 1]) high = mid;
+            else low = mid + 1;
+        }
+        return low;
+    }
+
+    static class TimeMap {
+        private Map<String, List<Pair>> map = null;
+
+        public TimeMap() {
+            this.map = new HashMap<>();
+        }
+
+        public void set(String key, String value, int timestamp) {
+            map.putIfAbsent(key, new ArrayList<Pair>());
+            map.get(key).add(new Pair(value, timestamp));
+        }
+
+        public String get(String key, int timestamp) {
+            if (!map.containsKey(key)) return "";
+            List<Pair> list = map.get(key);
+            int low = 0;
+            int high = list.size() - 1;
+            while (low <= high) {
+                int mid = low + (high - low) / 2;
+                if (list.get(mid).timeStamps <= timestamp) low = mid + 1;
+                else high = mid - 1;
+            }
+            return list.get(high).value;
+        }
+
+        class Pair {
+            private String value;
+            private int timeStamps;
+
+            public Pair(String value, int timeStamps) {
+                this.value = value;
+                this.timeStamps = timeStamps;
+            }
+        }
     }
 }
