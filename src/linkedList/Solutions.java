@@ -46,4 +46,17 @@ public class Solutions {
         }
         return dummy.next;
     }
+
+    private static boolean detectCycle(ListNode head) {
+        if (head == null) return false;
+        ListNode current = head;
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (fast != null && fast.next != null) {
+            if (slow == fast) return true;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return false;
+    }
 }
