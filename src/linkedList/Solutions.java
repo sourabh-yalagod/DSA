@@ -104,6 +104,49 @@ public class Solutions {
         slow.next = slow.next.next;
         return dummy.next;
     }
+
+    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+        ListNode prev = null;
+        ListNode current = l1;
+        while (current != null) {
+            ListNode nextNode = current.next;
+            current.next = prev;
+            prev = current;
+            current = nextNode;
+        }
+        l1 = prev;
+        prev = null;
+        current = l2;
+        while (current != null) {
+            ListNode nextNode = current.next;
+            current.next = prev;
+            prev = current;
+            current = nextNode;
+        }
+        l2 = prev;
+//        reversed
+//        add number
+        ListNode dummy = new ListNode(0);
+        int sum = 0;
+        while (l1 != null || l2 != null || sum != 0) {
+            int carry = sum;
+            if (l1 != null) {
+                sum += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                sum += l2.val;
+                l2 = l2.next;
+            }
+            sum += carry;
+            dummy.next = new ListNode(carry % 10);
+            dummy = dummy.next;
+            sum /= 10;
+        }
+        return dummy.next;
+    }
 }
 
 // 1 , 2 , 3 , 4 , 5
