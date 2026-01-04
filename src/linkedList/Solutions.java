@@ -88,6 +88,22 @@ public class Solutions {
             fast = temp2;
         }
     }
+
+    private static ListNode removeNthNodeFromLast(ListNode head, int n) {
+        if (head == null) return null;
+        ListNode dummy = new ListNode(0);
+        ListNode slow = dummy;
+        ListNode fast = dummy;
+        for (int i = 1; i < n; i++) {
+            fast = fast.next;
+        }
+        while (fast != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        slow.next = slow.next.next;
+        return dummy.next;
+    }
 }
 
 // 1 , 2 , 3 , 4 , 5
