@@ -59,4 +59,37 @@ public class Solutions {
         }
         return false;
     }
+
+    private static void reorderList(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode current = slow;
+        ListNode prev = null;
+        while (current != null) {
+            ListNode next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        slow = head;
+        fast = prev;
+        while (fast.next != null) {
+            ListNode temp1 = slow.next;
+            ListNode temp2 = fast.next;
+
+            slow.next = fast;
+            fast.next = temp1;
+
+            slow = temp1;
+            fast = temp2;
+        }
+    }
 }
+
+// 1 , 2 , 3 , 4 , 5
+
+// 1 , 4 , 3 , 2 , 5
