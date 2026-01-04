@@ -147,6 +147,20 @@ public class Solutions {
         }
         return dummy.next;
     }
+    public static int findDuplicate(int[] nums) {
+        int slow = nums[0];
+        int fast = nums[0];
+        do{
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }while(slow!=fast);
+
+        while(nums[slow]!=nums[fast]){
+            slow = nums[slow];
+            fast = nums[slow];
+        }
+        return slow;
+    }
 }
 
 // 1 , 2 , 3 , 4 , 5
