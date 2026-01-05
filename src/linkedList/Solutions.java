@@ -1,5 +1,8 @@
 package linkedList;
 
+import java.util.List;
+import java.util.PriorityQueue;
+
 public class Solutions {
     public static void main(String[] args) {
 
@@ -147,19 +150,64 @@ public class Solutions {
         }
         return dummy.next;
     }
+
     public static int findDuplicate(int[] nums) {
         int slow = nums[0];
         int fast = nums[0];
-        do{
+        do {
             slow = nums[slow];
             fast = nums[nums[fast]];
-        }while(slow!=fast);
+        } while (slow != fast);
 
-        while(nums[slow]!=nums[fast]){
+        while (nums[slow] != nums[fast]) {
             slow = nums[slow];
             fast = nums[slow];
         }
         return slow;
+    }
+
+    private static ListNode mergeKSortedList(List<ListNode> lists) {
+        if (lists == null || lists.isEmpty()) return null;
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        for (ListNode node : lists) if (node != null) pq.add(node);
+        ListNode dummy = new ListNode(0);
+        ListNode head = dummy;
+        while (!pq.isEmpty()) {
+            ListNode min = pq.poll();
+            dummy.next = min;
+            dummy = dummy.next;
+            while (min.next != null) pq.add(min.next);
+        }
+        return head.next;
+    }
+
+    private static ListNode reverseKGroup(ListNode head, int k) {
+        if (k < 2) return head;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode currentGroupHead = head;
+        ListNode previousGroupEnd = dummy;
+        int limit = 0;
+        while (head != null) {
+            limit++;
+            if (limit == k) {
+                ListNode nextGroupHead = head.next;
+                ListNode prev = null;
+                ListNode current = currentGroupHead;
+                while (current != nextGroupHead) {
+                    ListNode nextNode = current.next;
+                    current.next = prev;
+                    prev = current;
+                    current = nextNode;
+                }
+                previousGroupEnd.next = prev;
+                previousGroupEnd = currentGroupHead;
+                currentGroupHead = nextGroupHead;
+                head = nextGroupHead;
+                limit = 0;
+            } else head = head.next;
+        }
+        return dummy.next;
     }
 }
 
