@@ -6,10 +6,8 @@ import java.util.PriorityQueue;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[][] matrix = {{0, 2}, {2, 0}, {2, 2}};
-        for (int[] ele : kClosest(matrix, 2)) {
-            System.out.println("[" + ele[0] + " , " + "]" + ele[1]);
-        }
+        int[] array = {3, 2, 1, 5, 4, 6};
+        balanceQueue(array);
     }
 
     private static int lastStone(int[] stones) {
@@ -93,5 +91,32 @@ public class Solutions {
         }
         return result;
 
+    }
+
+    private static int balanceQueue(int[] array) {
+        PriorityQueue<Integer> left = new PriorityQueue<>((a, b) -> b - a); // max heap
+        PriorityQueue<Integer> right = new PriorityQueue<>();               // min heap
+
+        for (int ele : array) {
+
+            // Step 1: insert into correct heap
+            if (left.isEmpty() || ele <= left.peek()) {
+                left.add(ele);
+            } else {
+                right.add(ele);
+            }
+
+            // Step 2: balance sizes
+            if (left.size() > right.size() + 1) {
+                right.add(left.poll());
+            } else if (right.size() > left.size()) {
+                left.add(right.poll());
+            }
+        }
+
+// Output
+        System.out.println("Left half (reversed): " + left);
+        System.out.println("Right half: " + right);
+        return 0;
     }
 }

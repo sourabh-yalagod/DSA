@@ -7,7 +7,8 @@ import java.util.Map;
 
 public class Solutions {
     public static void main(String[] args) {
-
+        int[] array = {9, 3, 1, 0};
+        System.out.println(peakInMountainArray(array));
     }
 
     private static int binarySearch(int[] array, int target) {
@@ -113,6 +114,32 @@ public class Solutions {
             }
         }
     }
-    
 
+    private static int searchInRotatedArray(int[] array, int target) {
+        int low = 0;
+        int high = array.length - 1;
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (array[mid] == target) return mid;
+            if (array[low] <= array[mid]) {
+                if (array[low] <= target && target < array[mid]) high = mid - 1;
+                else low = mid + 1;
+            } else {
+                if (array[mid] <= target && target <= array[high]) low = mid + 1;
+                else high = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    private static int peakInMountainArray(int[] array) {
+        int low = 0;
+        int high = array.length - 1;
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (array[mid] < array[mid + 1]) low = mid + 1;
+            else high = mid;
+        }
+        return low;
+    }
 }
