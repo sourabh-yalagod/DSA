@@ -4,10 +4,17 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array1 = {1, 2, 3, 4, 0, 0};
-        int[] array2 = {1, 2};
-        String[] strings = {"act", "act", "bus", "train", "sub"};
-        mergeSortedArray(array1, array2);
+        int[] array = {1, 2, 3, 4, 5, 6, 7};
+        array = rotateArray(array, 3);
+        System.out.println(Arrays.toString(array));
+    }
+
+    private static int[] rotateArray(int[] array, int n) {
+        int len = array.length;
+        reverse(array,0,len-1);
+        reverse(array,0,n-1);
+        reverse(array,n,len-1);
+        return array;
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -168,5 +175,15 @@ public class Solutions {
             array1[last--] = array2[second--];
         }
         return array1;
+    }
+
+    private static void reverse(int[] array, int low, int high) {
+        while (low < high) {
+            int temp = array[low];
+            array[low] = array[high];
+            array[high] = temp;
+            low++;
+            high--;
+        }
     }
 }

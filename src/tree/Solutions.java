@@ -11,8 +11,10 @@ public class Solutions {
         for (int i = 5; i <= 15; i++) {
             insertNode(parentNode, i);
         }
-        printTree(parentNode);
-        System.out.println(bfs(parentNode));
+//        printTree(parentNode);
+        List<Integer> list = new ArrayList<>();
+//        dfs(parentNode, list);
+        System.out.println(list);
     }
 
     private static void insertNode(Node node, int value) {
@@ -68,4 +70,12 @@ public class Solutions {
         }
         return list;
     }
+
+    private static void dfs(Node node, List<Integer> list) {
+        if (node == null) return;
+        list.add(node.value);
+        dfs(node.left, list);
+        dfs(node.right, list);
+    }
+
 }
