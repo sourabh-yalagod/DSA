@@ -93,30 +93,15 @@ public class Solutions {
 
     }
 
-    private static int balanceQueue(int[] array) {
-        PriorityQueue<Integer> left = new PriorityQueue<>((a, b) -> b - a); // max heap
-        PriorityQueue<Integer> right = new PriorityQueue<>();               // min heap
-
-        for (int ele : array) {
-
-            // Step 1: insert into correct heap
-            if (left.isEmpty() || ele <= left.peek()) {
-                left.add(ele);
-            } else {
-                right.add(ele);
-            }
-
-            // Step 2: balance sizes
-            if (left.size() > right.size() + 1) {
-                right.add(left.poll());
-            } else if (right.size() > left.size()) {
-                left.add(right.poll());
+    private static void balanceQueue(int[] array) {
+        PriorityQueue<Integer> left = new PriorityQueue<>((a, b) -> a - b);
+        PriorityQueue<Integer> right = new PriorityQueue<>((a, b) -> b - a);
+        for (int i = 0; i < array.length; i++) {
+            left.offer(array[i]);
+            if (left.size() < right.size()) {
+                left.offer(array[i]);
             }
         }
-
-// Output
-        System.out.println("Left half (reversed): " + left);
-        System.out.println("Right half: " + right);
-        return 0;
+        System.out.println("Left : " + left);
     }
 }
