@@ -28,7 +28,7 @@ public class DFS {
         System.out.println(dfs(1));
     }
 
-    private static List<Integer> dfs(int start) {
+    static List<Integer> dfs(int start) {
         Set<Integer> set = new HashSet<>();
         Stack<Integer> stack = new Stack<>();
         List<Integer> result = new ArrayList<>();

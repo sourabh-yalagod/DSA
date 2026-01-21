@@ -6,56 +6,47 @@ import java.util.List;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[][] interval = {{1, 3}, {7, 9}};
-        int[] newInterval = {2, 4};
-        interval = insert(interval, newInterval);
-        for (int i = 0; i < interval.length; i++) {
-            System.out.print(" " + Arrays.toString(interval[i]));
+        int[][] interval = {{-3, -1}, {1, 4}, {7, 9}};
+        int[] newInterval = {5, 6};
+        int[][] intervals = insert(interval, newInterval);
+        for (int i = 0; i < intervals.length; i++) {
+            System.out.print(" " + Arrays.toString(intervals[i]));
         }
     }
 
     public static int[][] insert(int[][] intervals, int[] newInterval) {
+        List<int[]> list = new ArrayList<>();
+        // {-3, -1}, {1, 4}, {7, 9}
         int start = newInterval[0];
         int end = newInterval[1];
-        int n = intervals.length;
-        for (int i = 0; i < n; i++) {
-            if (start >= intervals[i][0] && end > intervals[i][1]) {
-                int[][] temp = new int[n + 1][2];
-                int index = 0;
-                boolean inserted = false;
-
-                for (int j = 0; j < temp.length; j++) {
-                    if (!inserted && (index == n || start < intervals[index][0])) {
-                        temp[j] = newInterval;
-                        inserted = true;
-                    } else {
-                        temp[j] = intervals[index++];
-                    }
-                }
-                return mergeIntervals(temp);
-            }
-        }
-        return mergeIntervals(intervals);
-    }
-
-    private static int[][] mergeIntervals(int[][] intervals) {
-        // {{1, 3}, {4, 8}, {7, 9}}
-        List<int[]> list = new ArrayList<>();
         int[] interval = intervals[0];
-        int n = intervals.length;
-        for (int i = 1; i < n; i++) {
-            if (interval[1] >= intervals[i][0]) {
-                interval[1] = Math.max(intervals[i][1], interval[1]);
-            } else {
+        for (int i = 0; i < intervals.length; i++) {
+            System.out.println(interval[1]);
+            if (interval[1] < start) {
                 list.add(interval);
                 interval = intervals[i];
+            } else {
+                list.add(newInterval);
+                start = Integer.MIN_VALUE;
+                i--;
+            }
+        }
+        return list.toArray(new int[2][list.size()]);
+    }
+
+    private static int[][] mergeInterval(int[][] intervals) {
+        List<int[]> list = new ArrayList<>();
+        int[] interval = intervals[0];
+        for (int i = 1; i < intervals.length; i++) {
+            if (interval[1] < intervals[i][0]) {
+                list.add(interval);
+                interval = intervals[i];
+            } else {
+                interval[0] = Math.min(interval[0], intervals[i][0]);
+                interval[1] = Math.max(interval[1], intervals[i][1]);
             }
         }
         list.add(interval);
-        int[][] result = new int[list.size()][2];
-        for (int i = 0; i < list.size(); i++) {
-            result[i] = list.get(i);
-        }
-        return result;
+        return list.toArray(new int[list.size()][2]);
     }
 }
