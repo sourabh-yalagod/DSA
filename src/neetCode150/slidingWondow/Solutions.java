@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        System.out.println(minWindowSubString("rabh", "soaurawwwbh"));
+        int[] re = {1, 3, -1, -3, 5, 3, 6, 7};
+        System.out.println(Arrays.toString(maxSlidingWindow(re, 2)));
     }
 
     private static int bestTimeToBuyStock1(int[] prices) {
@@ -164,5 +165,30 @@ public class Solutions {
             else break;
         }
         return s2.substring(left, right);
+    }
+
+    public static int[] maxSlidingWindow(int[] nums, int k) {
+        int n = nums.length;
+        if (k == 0 || n == 0) return nums;
+        int[] result = new int[n - k + 1];
+        Deque<Integer> queue = new ArrayDeque<>();
+        int max = Integer.MIN_VALUE;
+        int index = 0;
+        for (int i = 0; i < k; i++) {
+            queue.add(nums[i]);
+            max = Math.max(max, nums[i]);
+        }
+        result[index++] = max;
+        for (int i = k; i < n; i++) {
+            int left = queue.removeFirst();
+            if (max == left) {
+                for (int num : queue) max = Math.max(max, num);
+            }
+            max = Math.max(max, nums[i]);
+            result[index++] = max;
+            queue.add(nums[i]);
+        }
+
+        return result;
     }
 }

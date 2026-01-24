@@ -4,16 +4,16 @@ import java.util.*;
 
 public class Solutions {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7};
-        array = rotateArray(array, 3);
-        System.out.println(Arrays.toString(array));
+        int[] array = {1, 3, 5, 2, 2};
+
+        System.out.println(find(array));
     }
 
     private static int[] rotateArray(int[] array, int n) {
         int len = array.length;
-        reverse(array,0,len-1);
-        reverse(array,0,n-1);
-        reverse(array,n,len-1);
+        reverse(array, 0, len - 1);
+        reverse(array, 0, n - 1);
+        reverse(array, n, len - 1);
         return array;
     }
 
@@ -185,5 +185,24 @@ public class Solutions {
             low++;
             high--;
         }
+    }
+
+    private static int find(int[] array) {
+        int sum = 0;
+        int[] left = new int[array.length];
+        int[] right = new int[array.length];
+        for (int i = 1; i < array.length; i++) {
+            sum += array[i - 1];
+            left[i] = sum;
+        }
+        sum = 0;
+        for (int i = array.length - 2; i >= 0; i--) {
+            sum += array[i + 1];
+            right[i] = sum;
+        }
+        for (int i = 0; i < array.length; i++) {
+            if (left[i] == right[i]) return i;
+        }
+        return -1;
     }
 }
