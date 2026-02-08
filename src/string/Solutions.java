@@ -5,7 +5,7 @@ import java.util.*;
 public class Solutions {
 
     public static void main(String[] args) {
-        System.out.println(longestBalanced("abbac"));
+        System.out.println(longestBalanced("crabb"));
     }
 
     private static String reverseWords(String str) {
@@ -148,18 +148,36 @@ public class Solutions {
         return max;
     }
 
+    public static String intToRoman(int num) {
+        StringBuilder str = new StringBuilder();
+        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        for (int i = 0; i < values.length; i++) {
+            while (num >= values[i]) {
+                num -= values[i];
+                str.append(symbols[i]);
+            }
+        }
+        return str.toString();
+    }
+
     public static int longestBalanced(String s) {
         int max = 0;
-        for (int i = 0; i < s.length(); i++) {
-            int[] map = new int[26];
-            for (int j = i + 1; j < s.length(); j++) {
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            int[] freq = new int[26];
+            for (int j = i; j < n; j++) {
                 int index = s.charAt(j) - 'a';
-                map[index]++;
-                int sum = 0;
-                for (int k : map) {
-                    if (k != 0 && map[k] != index) sum = 1;
+                freq[index]++;
+                int check = 0;
+                for (int ele : freq) {
+                    if (ele == 0) continue;
+                    if (ele != freq[index]) {
+                        check = 0;
+                        break;
+                    } else check++;
                 }
-                if (sum == 0) max = Math.max(max, j - i + 1);
+                if (check != 0) max = Math.max(max, j - i + 1);
             }
         }
         return max;

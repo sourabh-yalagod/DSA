@@ -1,18 +1,14 @@
 package graph;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 public class Solutions {
+    Object[] a = {null, 1, "", 90L, 100D};
+
     public static void main(String[] args) {
-        String[][] graph = {
-                {"1", "1", "1", "1"},
-                {"1", "0", "0", "1"},
-                {"0", "1", "0", "1"},
-                {"1", "0", "1", "1"}
-        };
+        List<Object> list = new ArrayList();
+        list.add(List.of(null, 1, "", 90L, 100D));
+        String[][] graph = {{"1", "1", "1", "1"}, {"1", "0", "0", "1"}, {"0", "1", "0", "1"}, {"1", "0", "1", "1"}};
     }
 
     public static int numIslands(String[][] grid) {
@@ -101,5 +97,22 @@ public class Solutions {
         dfsForBoard(board, i - 1, j);
         dfsForBoard(board, i + 1, j);
         return;
+    }
+
+    public int countComponents(int n, int[][] edges) {
+        int count = 0;
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < edges.length; i++) {
+            dfsForGraphCount(set, i, edges);
+            count++;
+        }
+        return count;
+    }
+
+    private void dfsForGraphCount(Set<Integer> set, int element, int[][] edges) {
+        set.add(edges[element][0]);
+        for (int i = element; i < edges.length; i++) {
+            set.add(edges[i][0]);
+        }
     }
 }
