@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/sourabh-yalagod/DSA/tree/master/0011-container-with-most-water) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/sourabh-yalagod/DSA/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0033-search-in-rotated-sorted-array](https://github.com/sourabh-yalagod/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0152-maximum-product-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0152-maximum-product-subarray) |
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
 | [0238-product-of-array-except-self](https://github.com/sourabh-yalagod/DSA/tree/master/0238-product-of-array-except-self) |
@@ -34,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/sourabh-yalagod/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Dynamic Programming
 |  |
