@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0039-combination-sum) |
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
+| [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0152-maximum-product-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0152-maximum-product-subarray) |
 | [0162-find-peak-element](https://github.com/sourabh-yalagod/DSA/tree/master/0162-find-peak-element) |
@@ -33,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
 ## Hash Table
