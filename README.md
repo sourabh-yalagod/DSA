@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
 ## Two Pointers
 |  |
@@ -59,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
+| [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
 | [0152-maximum-product-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0152-maximum-product-subarray) |
 ## Prefix Sum
 |  |
@@ -96,4 +98,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0278-first-bad-version](https://github.com/sourabh-yalagod/DSA/tree/master/0278-first-bad-version) |
 | [0374-guess-number-higher-or-lower](https://github.com/sourabh-yalagod/DSA/tree/master/0374-guess-number-higher-or-lower) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
