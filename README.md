@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0022-generate-parentheses) |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
 | [0152-maximum-product-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0152-maximum-product-subarray) |
@@ -76,11 +77,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0022-generate-parentheses) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0344-reverse-string](https://github.com/sourabh-yalagod/DSA/tree/master/0344-reverse-string) |
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0039-combination-sum) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 ## Depth-First Search
