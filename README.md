@@ -134,9 +134,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0032-longest-valid-parentheses) |
+| [0155-min-stack](https://github.com/sourabh-yalagod/DSA/tree/master/0155-min-stack) |
 ## Design
 |  |
 | ------- |
+| [0155-min-stack](https://github.com/sourabh-yalagod/DSA/tree/master/0155-min-stack) |
 | [0969-number-of-recent-calls](https://github.com/sourabh-yalagod/DSA/tree/master/0969-number-of-recent-calls) |
 ## Queue
 |  |
