@@ -3,39 +3,26 @@ class Solution {
         int open = 0;
         int close = 0;
         int max = 0;
+        int length = s.length();
 
-        // Left → Right
-        for (char ch : s.toCharArray()) {
-            if (ch == '(') open++;
-            else close++;
-
-            if (open == close) {
-                max = Math.max(max, 2 * close);
-            } else if (close > open) {
-                open = 0;
-                close = 0;
-            }
+        for(int i=0;i<length;i++){
+            char ch = s.charAt(i);
+            if(ch=='(')open++;
+            else if(ch==')')close++;
+            if(open==close){
+                max = Math.max(open*2,max);
+            }else if(close>open) close = open = 0;
         }
-
-        // Reset
         open = 0;
         close = 0;
-
-        // Right → Left
-        for (int i = s.length() - 1; i >= 0; i--) {
+        for(int i=length-1;i>=0;i--){
             char ch = s.charAt(i);
-
-            if (ch == ')') close++;
-            else open++;
-
-            if (open == close) {
-                max = Math.max(max, 2 * open);
-            } else if (open > close) {
-                open = 0;
-                close = 0;
-            }
+            if(ch==')')close++;
+            else if(ch=='(')open++;
+            if(open==close){
+                max = Math.max(open*2,max);
+            }else if(open>close) close = open = 0;
         }
-
         return max;
     }
 }
