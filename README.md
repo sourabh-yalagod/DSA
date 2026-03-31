@@ -138,16 +138,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0032-longest-valid-parentheses) |
 | [0155-min-stack](https://github.com/sourabh-yalagod/DSA/tree/master/0155-min-stack) |
+| [0232-implement-queue-using-stacks](https://github.com/sourabh-yalagod/DSA/tree/master/0232-implement-queue-using-stacks) |
 | [0402-remove-k-digits](https://github.com/sourabh-yalagod/DSA/tree/master/0402-remove-k-digits) |
 | [1078-remove-outermost-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/1078-remove-outermost-parentheses) |
 ## Design
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/sourabh-yalagod/DSA/tree/master/0155-min-stack) |
+| [0232-implement-queue-using-stacks](https://github.com/sourabh-yalagod/DSA/tree/master/0232-implement-queue-using-stacks) |
 | [0969-number-of-recent-calls](https://github.com/sourabh-yalagod/DSA/tree/master/0969-number-of-recent-calls) |
 ## Queue
 |  |
 | ------- |
+| [0232-implement-queue-using-stacks](https://github.com/sourabh-yalagod/DSA/tree/master/0232-implement-queue-using-stacks) |
 | [0969-number-of-recent-calls](https://github.com/sourabh-yalagod/DSA/tree/master/0969-number-of-recent-calls) |
 ## Data Stream
 |  |
