@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/sourabh-yalagod/DSA/tree/master/0238-product-of-array-except-self) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
+| [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
 ## Math
 |  |
 | ------- |
@@ -151,12 +152,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/sourabh-yalagod/DSA/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/sourabh-yalagod/DSA/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/sourabh-yalagod/DSA/tree/master/0232-implement-queue-using-stacks) |
+| [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
 | [0969-number-of-recent-calls](https://github.com/sourabh-yalagod/DSA/tree/master/0969-number-of-recent-calls) |
 ## Queue
 |  |
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/sourabh-yalagod/DSA/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/sourabh-yalagod/DSA/tree/master/0232-implement-queue-using-stacks) |
+| [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
 | [0969-number-of-recent-calls](https://github.com/sourabh-yalagod/DSA/tree/master/0969-number-of-recent-calls) |
 ## Data Stream
 |  |
@@ -167,4 +170,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0316-remove-duplicate-letters](https://github.com/sourabh-yalagod/DSA/tree/master/0316-remove-duplicate-letters) |
 | [0402-remove-k-digits](https://github.com/sourabh-yalagod/DSA/tree/master/0402-remove-k-digits) |
+## Linked List
+|  |
+| ------- |
+| [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
 <!---LeetCode Topics End-->
