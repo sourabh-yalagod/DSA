@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/sourabh-yalagod/DSA/tree/master/0050-powx-n) |
+| [0206-reverse-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0206-reverse-linked-list) |
 ## String Matching
 |  |
 | ------- |
@@ -173,5 +174,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0206-reverse-linked-list) |
 | [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
 <!---LeetCode Topics End-->
