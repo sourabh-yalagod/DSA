@@ -110,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
+| [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
 ## Matrix
 |  |
@@ -194,9 +195,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
+| [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 <!---LeetCode Topics End-->
