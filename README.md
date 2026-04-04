@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0572-subtree-of-another-tree) |
 ## Matrix
 |  |
 | ------- |
@@ -140,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/sourabh-yalagod/DSA/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0572-subtree-of-another-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0572-subtree-of-another-tree) |
 ## Sliding Window
 |  |
 | ------- |
@@ -191,17 +193,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Function
 |  |
 | ------- |
+| [0572-subtree-of-another-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0572-subtree-of-another-tree) |
 | [0816-design-hashset](https://github.com/sourabh-yalagod/DSA/tree/master/0816-design-hashset) |
 ## Tree
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0572-subtree-of-another-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0572-subtree-of-another-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
