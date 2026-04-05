@@ -14,13 +14,12 @@
  * }
  */
 class Solution {
-    Stack<Integer> stack = new Stack<>();
+    Integer prev = null;
     public boolean isValidBST(TreeNode root) {
         if(root==null) return true;
-        boolean left = isValidBST(root.left);
-        if(!stack.isEmpty() && stack.peek() >= root.val) return false;
-        stack.push(root.val); 
-        boolean right = isValidBST(root.right);
-        return left && right;
+        if(!isValidBST(root.left)) return false;
+        if(prev!=null && prev >= root.val) return false;
+        prev = root.val;
+        return isValidBST(root.right);
     }
 }
