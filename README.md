@@ -116,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0100-same-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0100-same-tree) |
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
@@ -157,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0032-longest-valid-parentheses) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0155-min-stack](https://github.com/sourabh-yalagod/DSA/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/sourabh-yalagod/DSA/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/sourabh-yalagod/DSA/tree/master/0232-implement-queue-using-stacks) |
@@ -193,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/sourabh-yalagod/DSA/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/sourabh-yalagod/DSA/tree/master/0021-merge-two-sorted-lists) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0206-reverse-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0206-reverse-linked-list) |
 | [0816-design-hashset](https://github.com/sourabh-yalagod/DSA/tree/master/0816-design-hashset) |
 | [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
@@ -210,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0102-binary-tree-level-order-traversal](https://github.com/sourabh-yalagod/DSA/tree/master/0102-binary-tree-level-order-traversal) |
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0222-count-complete-tree-nodes](https://github.com/sourabh-yalagod/DSA/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -223,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0102-binary-tree-level-order-traversal](https://github.com/sourabh-yalagod/DSA/tree/master/0102-binary-tree-level-order-traversal) |
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0222-count-complete-tree-nodes](https://github.com/sourabh-yalagod/DSA/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
