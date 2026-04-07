@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sourabh-yalagod/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/sourabh-yalagod/DSA/tree/master/0162-find-peak-element) |
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
+| [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0238-product-of-array-except-self](https://github.com/sourabh-yalagod/DSA/tree/master/0238-product-of-array-except-self) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0543-diameter-of-binary-tree) |
@@ -126,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
+| [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 ## Simulation
 |  |
 | ------- |
@@ -242,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0102-binary-tree-level-order-traversal](https://github.com/sourabh-yalagod/DSA/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/sourabh-yalagod/DSA/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
+| [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 ## Binary Search Tree
 |  |
@@ -251,4 +255,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/sourabh-yalagod/DSA/tree/master/0222-count-complete-tree-nodes) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
