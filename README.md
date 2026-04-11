@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
 | [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0238-product-of-array-except-self](https://github.com/sourabh-yalagod/DSA/tree/master/0238-product-of-array-except-self) |
+| [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
 | [0816-design-hashset](https://github.com/sourabh-yalagod/DSA/tree/master/0816-design-hashset) |
@@ -130,10 +131,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
+| [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
 ## Simulation
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
+| [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
 ## Interactive
 |  |
 | ------- |
