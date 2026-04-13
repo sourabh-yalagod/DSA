@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0032-longest-valid-parentheses) |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0152-maximum-product-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0152-maximum-product-subarray) |
 ## Prefix Sum
 |  |
@@ -119,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -222,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0222-count-complete-tree-nodes](https://github.com/sourabh-yalagod/DSA/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -237,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0113-path-sum-ii) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0124-binary-tree-maximum-path-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0222-count-complete-tree-nodes](https://github.com/sourabh-yalagod/DSA/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sourabh-yalagod/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
