@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
+| [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 | [0816-design-hashset](https://github.com/sourabh-yalagod/DSA/tree/master/0816-design-hashset) |
 | [0860-design-circular-queue](https://github.com/sourabh-yalagod/DSA/tree/master/0860-design-circular-queue) |
 ## Math
@@ -43,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
 | [0344-reverse-string](https://github.com/sourabh-yalagod/DSA/tree/master/0344-reverse-string) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 | [0908-middle-of-the-linked-list](https://github.com/sourabh-yalagod/DSA/tree/master/0908-middle-of-the-linked-list) |
 ## Sorting
 |  |
@@ -50,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
+| [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 ## Hash Table
 |  |
 | ------- |
@@ -69,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0278-first-bad-version](https://github.com/sourabh-yalagod/DSA/tree/master/0278-first-bad-version) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0374-guess-number-higher-or-lower](https://github.com/sourabh-yalagod/DSA/tree/master/0374-guess-number-higher-or-lower) |
+| [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -163,6 +167,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/sourabh-yalagod/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 ## Stack
 |  |
 | ------- |
@@ -273,4 +278,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/sourabh-yalagod/DSA/tree/master/0547-number-of-provinces) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 <!---LeetCode Topics End-->
