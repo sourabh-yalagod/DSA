@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/sourabh-yalagod/DSA/tree/master/0238-product-of-array-except-self) |
 | [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
 | [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 | [0816-design-hashset](https://github.com/sourabh-yalagod/DSA/tree/master/0816-design-hashset) |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
 | [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 ## Hash Table
@@ -72,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0278-first-bad-version](https://github.com/sourabh-yalagod/DSA/tree/master/0278-first-bad-version) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0374-guess-number-higher-or-lower](https://github.com/sourabh-yalagod/DSA/tree/master/0374-guess-number-higher-or-lower) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 ## Dynamic Programming
 |  |
@@ -138,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 ## Simulation
 |  |
 | ------- |
@@ -281,5 +285,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 <!---LeetCode Topics End-->
