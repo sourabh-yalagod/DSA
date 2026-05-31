@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/sourabh-yalagod/DSA/tree/master/0050-powx-n) |
 | [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
+| [0441-arranging-coins](https://github.com/sourabh-yalagod/DSA/tree/master/0441-arranging-coins) |
 ## Two Pointers
 |  |
 | ------- |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0374-guess-number-higher-or-lower](https://github.com/sourabh-yalagod/DSA/tree/master/0374-guess-number-higher-or-lower) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0441-arranging-coins](https://github.com/sourabh-yalagod/DSA/tree/master/0441-arranging-coins) |
 | [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
 ## Dynamic Programming
 |  |
