@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
+| [0073-set-matrix-zeroes](https://github.com/sourabh-yalagod/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0152-maximum-product-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0152-maximum-product-subarray) |
@@ -60,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/sourabh-yalagod/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0073-set-matrix-zeroes](https://github.com/sourabh-yalagod/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0816-design-hashset](https://github.com/sourabh-yalagod/DSA/tree/master/0816-design-hashset) |
 ## Binary Search
@@ -140,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/sourabh-yalagod/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/sourabh-yalagod/DSA/tree/master/0200-number-of-islands) |
 | [0289-game-of-life](https://github.com/sourabh-yalagod/DSA/tree/master/0289-game-of-life) |
