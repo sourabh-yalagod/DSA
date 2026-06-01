@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/sourabh-yalagod/DSA/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/sourabh-yalagod/DSA/tree/master/0035-search-insert-position) |
 | [0039-combination-sum](https://github.com/sourabh-yalagod/DSA/tree/master/0039-combination-sum) |
+| [0053-maximum-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
@@ -90,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/sourabh-yalagod/DSA/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/sourabh-yalagod/DSA/tree/master/0032-longest-valid-parentheses) |
+| [0053-maximum-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/sourabh-yalagod/DSA/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/sourabh-yalagod/DSA/tree/master/0118-pascals-triangle) |
@@ -297,4 +299,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0658-find-k-closest-elements](https://github.com/sourabh-yalagod/DSA/tree/master/0658-find-k-closest-elements) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/sourabh-yalagod/DSA/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
