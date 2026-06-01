@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/sourabh-yalagod/DSA/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
 | [0073-set-matrix-zeroes](https://github.com/sourabh-yalagod/DSA/tree/master/0073-set-matrix-zeroes) |
+| [0075-sort-colors](https://github.com/sourabh-yalagod/DSA/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/sourabh-yalagod/DSA/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0118-pascals-triangle](https://github.com/sourabh-yalagod/DSA/tree/master/0118-pascals-triangle) |
@@ -45,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/sourabh-yalagod/DSA/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/sourabh-yalagod/DSA/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/sourabh-yalagod/DSA/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0075-sort-colors](https://github.com/sourabh-yalagod/DSA/tree/master/0075-sort-colors) |
 | [0189-rotate-array](https://github.com/sourabh-yalagod/DSA/tree/master/0189-rotate-array) |
 | [0344-reverse-string](https://github.com/sourabh-yalagod/DSA/tree/master/0344-reverse-string) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -54,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/sourabh-yalagod/DSA/tree/master/0056-merge-intervals) |
+| [0075-sort-colors](https://github.com/sourabh-yalagod/DSA/tree/master/0075-sort-colors) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/sourabh-yalagod/DSA/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/sourabh-yalagod/DSA/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0414-third-maximum-number](https://github.com/sourabh-yalagod/DSA/tree/master/0414-third-maximum-number) |
