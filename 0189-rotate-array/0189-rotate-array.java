@@ -1,11 +1,10 @@
 class Solution {
     public void rotate(int[] array, int k) {
-        int low = 0;
-        int high = array.length-1;
-        k = k%(high+1);
-        reverse(array,low,high);
+        int length = array.length;
+        k = k % length;
+        reverse(array,0,length-1);
         reverse(array,0,k-1);
-        reverse(array,k,high);
+        reverse(array,k,length-1);
     }
 
     private static void reverse(int[] array, int low, int high) {
